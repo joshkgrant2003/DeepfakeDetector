@@ -42,7 +42,6 @@ __pycache__/
 
 # ml stuff
 
-*.pth
 *.pt
 *.onnx
 data/
