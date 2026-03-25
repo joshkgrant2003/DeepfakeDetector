@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 function App() {
+  const host = import.meta.env.VITE_HOST ? import.meta.env.VITE_HOST : import.meta.env.VITE_LOCAL_HOST;
+
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [result, setResult] = useState<{
@@ -25,7 +27,7 @@ function App() {
     const formData = new FormData();
     formData.append("file", file);
 
-    const res = await fetch("http://127.0.0.1:8000/predict", {
+    const res = await fetch(`${host}/predict`, {
       method: "POST",
       body: formData,
     });
