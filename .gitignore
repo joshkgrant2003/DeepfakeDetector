@@ -1,0 +1,65 @@
+# general
+
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# frontend
+
+node_modules/
+dist/
+build/
+out/
+.next/
+coverage/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+
+# env
+
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+env/
+ENV/
+
+# backend
+pycache/
+*.py[cod]
+*$py.class
+__pycache__/
+
+# ml stuff
+
+*.pth
+*.pt
+*.onnx
+data/
+datasets/
+*.csv
+*.zip
+*.tar
+*.gz
+*.pkl
+*.joblib
+*.h5
+
+# packages
+
+build/
+dist/
+*.egg-info/
+.eggs/
+*.bak
+*.cache
